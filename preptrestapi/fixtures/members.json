@@ -1,0 +1,50 @@
+[
+  {
+    "model": "preptrestapi.member",
+    "pk": 1,
+    "fields": {
+      "profile_id": 1,
+      "name": "Dad",
+      "dob": "1974-06-28",
+      "weight": 223,
+      "height": 75,
+      "gender": "M"
+    }
+  },
+  {
+    "model": "preptrestapi.member",
+    "pk": 2,
+    "fields": {
+      "profile_id": 1,
+      "name": "Mom",
+      "dob": "1976-01-25",
+      "weight": 115,
+      "height": 62,
+      "gender": "F"
+    }
+  },
+  {
+    "model": "preptrestapi.member",
+    "pk": 3,
+    "fields": {
+      "profile_id": 1,
+      "name": "Max",
+      "dob": "2010-09-15",
+      "weight": 72,
+      "height": 54,
+      "gender": "M"
+    }
+  },
+  {
+    "model": "preptrestapi.member",
+    "pk": 4,
+    "fields": {
+      "profile_id": 1,
+      "name": "Sissy",
+      "dob": "2012-04-09",
+      "weight": 62,
+      "height": 51,
+      "gender": "F"
+    }
+  }
+]
