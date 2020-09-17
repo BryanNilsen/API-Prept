@@ -20,6 +20,23 @@ class WaterSerializer(serializers.HyperlinkedModelSerializer):
 class WaterViewSet(ViewSet):
     """Water resource"""
 
+    def create(self, request):
+        """
+        Handle POST Operations
+        Returns:
+            Response -- JSON serialized Water instance
+        """
+        newwater = Water()
+        newwater.name = request.data["name"]
+        newwater.quantity = request.data["quantity"]
+        newwater.ounces = request.data["ounces"]
+        newwater.container = request.data["container"]
+        newwater.profile_id = request.data["profile_id"]
+        newwater.save()
+
+        serializer = WaterSerializer(newwater, context={'request': request})
+        return Response(serializer.data)
+
     def retrieve(self, request, pk=None):
         """Handle GET requests for single water item instance
 
