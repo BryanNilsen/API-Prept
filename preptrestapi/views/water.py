@@ -4,19 +4,16 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers
 from preptrestapi.models import Water
-from .profile import ProfileSerializer
 
 
 class WaterSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for Water items"""
 
-    profile = ProfileSerializer()
-
     class Meta:
         model = Water
         url = serializers.HyperlinkedIdentityField(
             view_name='water', lookup_field='id')
-        fields = ('id', 'profile', 'profile_id', 'name', 'quantity', 'ounces',
+        fields = ('id', 'url', 'profile_id', 'name', 'quantity', 'ounces',
                   'container')
 
 

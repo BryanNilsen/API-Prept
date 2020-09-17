@@ -6,3 +6,5 @@ from .user import UserViewSet
 from .food import FoodViewSet
 from .water import WaterViewSet
 from .member import MemberViewSet
+from .register import register_user
+from .register import login_user
