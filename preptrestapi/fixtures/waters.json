@@ -1,0 +1,57 @@
+[
+  {
+    "model": "preptrestapi.water",
+    "pk": 1,
+    "fields": {
+      "profile_id": 1,
+      "name": "Aquafina Case",
+      "quantity": 64,
+      "ounces": 12,
+      "container": "bottle"
+    }
+  },
+  {
+    "model": "preptrestapi.water",
+    "pk": 2,
+    "fields": {
+      "profile_id": 1,
+      "name": "La Croix - Lemon",
+      "quantity": 15,
+      "ounces": 12,
+      "container": "can"
+    }
+  },
+  {
+    "model": "preptrestapi.water",
+    "pk": 3,
+    "fields": {
+      "profile_id": 1,
+      "name": "La Croix - Lime",
+      "quantity": 15,
+      "ounces": 12,
+      "container": "can"
+    }
+  },
+  {
+    "model": "preptrestapi.water",
+    "pk": 4,
+    "fields": {
+      "profile_id": 1,
+      "name": "Poland Spring - Case",
+      "quantity": 32,
+      "ounces": 12,
+      "container": "bottle"
+    }
+  },
+  {
+    "model": "preptrestapi.water",
+    "pk": 5,
+    "fields": {
+      "profile_id": 1,
+      "name": "Kroger Filtered Water",
+      "quantity": 2,
+      "ounces": 128,
+      "container": "jug"
+    }
+  }
+]

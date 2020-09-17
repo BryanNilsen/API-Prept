@@ -1,0 +1,227 @@
+[
+  {
+    "model": "preptrestapi.food",
+    "pk": 1,
+    "fields": {
+      "profile_id": 1,
+      "name": "Peanut Butter - Creamy",
+      "quantity": 3,
+      "ounces": 16,
+      "servings": 14,
+      "calories_per_serving": 180,
+      "expiration_date": "2020-12-23",
+      "container": "jar",
+      "brand": "Kroger"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 2,
+    "fields": {
+      "profile_id": 1,
+      "name": "Kidney Beans",
+      "quantity": 3,
+      "ounces": 16,
+      "servings": 3,
+      "calories_per_serving": 120,
+      "expiration_date": "2022-01-01",
+      "container": "can",
+      "brand": "Bush's"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 3,
+    "fields": {
+      "profile_id": 1,
+      "name": "Ramen Noodles (Chicken)",
+      "quantity": 12,
+      "ounces": 3,
+      "servings": 2,
+      "calories_per_serving": 190,
+      "expiration_date": "2021-04-15",
+      "container": "packet",
+      "brand": "Maruchan Ramen"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 4,
+    "fields": {
+      "profile_id": 1,
+      "name": "Ramen Noodles (Beef)",
+      "quantity": 12,
+      "ounces": 3,
+      "servings": 2,
+      "calories_per_serving": 190,
+      "expiration_date": "2021-04-14",
+      "container": "packet",
+      "brand": "Maruchan Ramen"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 5,
+    "fields": {
+      "profile_id": 1,
+      "name": "Ramen Noodles (Chicken)",
+      "quantity": 12,
+      "ounces": 3,
+      "servings": 2,
+      "calories_per_serving": 190,
+      "expiration_date": "2020-05-25",
+      "container": "packet",
+      "brand": "Maruchan Ramen"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 6,
+    "fields": {
+      "profile_id": 1,
+      "name": "Pickles",
+      "quantity": 1,
+      "ounces": 16,
+      "container": "jar",
+      "servings": 16,
+      "calories_per_serving": 5,
+      "expiration_date": "2020-05-30",
+      "brand": "Kroger"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 7,
+    "fields": {
+      "profile_id": 1,
+      "name": "Chunk Light Tuna",
+      "quantity": 7,
+      "ounces": 5,
+      "servings": 1,
+      "calories_per_serving": 80,
+      "expiration_date": "2022-08-12",
+      "container": "can",
+      "brand": "Kroger"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 8,
+    "fields": {
+      "profile_id": 1,
+      "name": "Chicken Noodle Soup",
+      "quantity": 2,
+      "ounces": 19,
+      "servings": 2,
+      "calories_per_serving": 90,
+      "expiration_date": "2021-12-25",
+      "container": "can",
+      "brand": "Progresso"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 9,
+    "fields": {
+      "profile_id": 1,
+      "name": "Lentil Soup",
+      "brand": "Amy's Organic",
+      "quantity": 4,
+      "ounces": 14,
+      "servings": 1,
+      "calories_per_serving": 300,
+      "expiration_date": "2022-06-01",
+      "container": "can"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 10,
+    "fields": {
+      "profile_id": 1,
+      "name": "Black Beans",
+      "brand": "Kroger",
+      "quantity": 4,
+      "ounces": 15,
+      "servings": 3,
+      "calories_per_serving": 120,
+      "expiration_date": "2022-01-07",
+      "container": "can"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 11,
+    "fields": {
+      "profile_id": 1,
+      "name": "Granola Bars (Chocolate Chip)",
+      "brand": "Quaker",
+      "quantity": 1,
+      "ounces": 58,
+      "servings": 58,
+      "calories_per_serving": 100,
+      "expiration_date": "2020-09-29",
+      "container": "box"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 12,
+    "fields": {
+      "profile_id": 1,
+      "name": "Lentils",
+      "brand": "Conchita",
+      "quantity": 1,
+      "ounces": 12,
+      "servings": 9,
+      "calories_per_serving": 134,
+      "expiration_date": "2019-11-01",
+      "container": "bag"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 13,
+    "fields": {
+      "profile_id": 1,
+      "name": "Long Grain Rice",
+      "brand": "Mahatma",
+      "quantity": 1,
+      "ounces": 32,
+      "servings": 20,
+      "calories_per_serving": 160,
+      "expiration_date": "2021-12-01",
+      "container": "bag"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 14,
+    "fields": {
+      "profile_id": 1,
+      "name": "Thai Jasmine Rice",
+      "brand": "Kroger",
+      "quantity": 1,
+      "ounces": 32,
+      "servings": 20,
+      "calories_per_serving": 160,
+      "expiration_date": "2021-01-07",
+      "container": "bag"
+    }
+  },
+  {
+    "model": "preptrestapi.food",
+    "pk": 15,
+    "fields": {
+      "profile_id": 1,
+      "name": "Long Grain Brown Rice",
+      "brand": "Kroger",
+      "quantity": 1,
+      "ounces": 32,
+      "servings": 20,
+      "calories_per_serving": 160,
+      "expiration_date": "2021-01-29",
+      "container": "bag"
+    }
+  }
+]
