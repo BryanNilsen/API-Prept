@@ -57,12 +57,21 @@ class MemberViewSet(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
 
-    def list(self, request):
-        """ Handle get requests to member resource"""
-        members = Member.objects.all()
-        serializer = MemberSerializer(
-            members, many=True, context={'request': request})
-        return Response(serializer.data)
+    def update(self, request, pk=None):
+        """
+        Handle PUT Operations
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        member = Member.objects.get(pk=pk)
+        member.name = request.data["name"]
+        member.gender = request.data["gender"]
+        member.height = request.data["height"]
+        member.weight = request.data["weight"]
+        member.dob = request.data["dob"]
+        member.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single member
@@ -77,3 +86,10 @@ class MemberViewSet(ViewSet):
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
         except Exception as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def list(self, request):
+        """ Handle get requests to member resource"""
+        members = Member.objects.all()
+        serializer = MemberSerializer(
+            members, many=True, context={'request': request})
+        return Response(serializer.data)
