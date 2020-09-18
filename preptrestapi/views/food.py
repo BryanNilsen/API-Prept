@@ -57,12 +57,24 @@ class FoodViewSet(ViewSet):
         except Exception as ex:
             return HttpResponseServerError(ex)
 
-    def list(self, request):
-        """ Handle get requests to food resource"""
-        foods = Food.objects.all()
-        serializer = FoodSerializer(
-            foods, many=True, context={'request': request})
-        return Response(serializer.data)
+    def update(self, request, pk=None):
+        """
+        Handle PUT Operations
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        food = Food.objects.get(pk=pk)
+        food.name = request.data["name"]
+        food.brand = request.data["brand"]
+        food.quantity = request.data["quantity"]
+        food.ounces = request.data["ounces"]
+        food.servings = request.data["servings"]
+        food.calories_per_serving = request.data["calories_per_serving"]
+        food.container = request.data["container"]
+        food.expiration_date = request.data["expiration_date"]
+        food.save()
+
+        return Response({}, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk=None):
         """Handle DELETE requests for a single food item
@@ -77,3 +89,10 @@ class FoodViewSet(ViewSet):
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
         except Exception as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    def list(self, request):
+        """ Handle get requests to food resource"""
+        foods = Food.objects.all()
+        serializer = FoodSerializer(
+            foods, many=True, context={'request': request})
+        return Response(serializer.data)
