@@ -26,6 +26,7 @@ from preptrestapi.views import *
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'profiles', ProfileViewSet, 'profile')
+router.register(r'profiledata', ProfileDataViewSet, 'profiledata')
 router.register(r'foods', FoodViewSet, 'food')
 router.register(r'waters', WaterViewSet, 'water')
 router.register(r'members', MemberViewSet, 'member')
